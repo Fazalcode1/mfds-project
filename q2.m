@@ -59,11 +59,11 @@ optionb = L*U;
 end
 
 %Solution explanation
-fprintf('\nSOLUTION Q2:\nWe know L and U matrices represent lower and upper triangular matrices. We also know that eigen values of a\n');
-fprintf('upper triangular matrix are its diagonal elements. Let the eigenvalues of U be (1,1,3). So, we cn assume the matrices L and U as');
-fprintf('[1 0 0;a 1 0;b c 1], [1 d e;0 1 f;0 0 3]. Given that L+U is symmetric which implies a=d, b=e, c=f. And after finding the unknown\n');
-fprintf('elements we can A from L*U. Since, there are 3 possible ways of arranging eigen values (1,1,3) in the diagonal. We will get 3 ');
-fprintf('possibilities of A. The remaining option will not be a possibility of A and it will be the answer.\n');
+fprintf('\nSOLUTION Q2:\nWe know L and U matrices represent lower and upper triangular matrices, respectively. We also know that the eigenvalues of a\n');
+fprintf('upper triangular matrix are its diagonal elements. Let the eigenvalues of U be (1, 1, 3). So, we can assume the matrices L and U as\n');
+fprintf('[1 0 0;a 1 0;b c 1], [1 d e;0 1 f;0 0 3]. Given that L+U is symmetric, which implies a=d, b=e, and c=f, And after finding the unknown\n');
+fprintf('elements, we can find the matrix A from L*U. Since there are three possible ways of arranging eigenvalues (1, 1, and 3) in the diagonal, we\n');
+fprintf('will get three possibilities of A. The remaining option will not be a possibility of A and it will be the answer.\n');
 
 %Function made for finding unknown elements
 function [a,b,c] = f(x,~,z,k,p,q)
