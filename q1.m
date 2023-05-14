@@ -32,8 +32,9 @@ disp('correct answer is: option b'),disp(answer)
 
 end
 
-fprintf('\nSOLUTION Q1:\n We know that Av implies that the resulting vector is a linear combination of the columns of A. Therefore\n');
-fprintf('the projection of B on the subspace spanned by the column vectors of A will be the vector that is at the least distance from B.\n');
+fprintf('\nSOLUTION Q1:\nWe know that from matrix multiplication, Av is a linear combination of the columns of A. That means the vector Av is in\n'); 
+fprintf('the subspace spanned by the column vectors of A. We also know that the projection of a vector onto a subspace will be the vector in the\n'); 
+fprintf('subspace, which is at the least distance from the vector. Therefore, we need to find the projection of B on the subspace spanned by the column vectors of A.\n');
 fprintf('So, first we need to use the Gram-Schmidt orthogonalization and find an orthonormal basis for the subspace, and then we can project\n');
 fprintf('the vector B onto them, which will be our desired vector Av.\n');
 
