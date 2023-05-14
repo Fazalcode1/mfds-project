@@ -1,6 +1,8 @@
 
 %% Question 1 (Linear Algebra)
 
+for i=1:5
+fprintf('\nQ1V%d \n',i);
 clear all
 
 x = randi([-10 10],3,3);
@@ -19,14 +21,16 @@ optiona = (answer+y)/2;
 optionc = y;
 optiond = dotproduct(y,k1)*k2+dotproduct(y,k2)*k1;
 
-disp('A vector v is called a least squares solution of the linear system Ax = B where A is a 3x3 matrix, B is a 3x1 vector, if and only if')
-disp('the distance of B from Av is least i.e ||Av-B||<=||Az-B|| for all z ∈ R3x1. Find out the value of Av such that v is a least squares solution. ');
+disp('Question: A vector v is called a least squares solution of the linear system Ax = B, where A is a 3x3 matrix and B is a 3x1 vector, if and only if')
+disp('the distance of B from Av is the least, i.e., ||Av-B||<=||Az-B|| for all z ∈ R3x1. Find out the value of Av such that v is a least squares solution. ');
 disp(' A ='); disp(x);disp(' B =');disp(y);
 disp('(a)');disp(optiona);
 disp('(b)');disp(answer);
 disp('(c)');disp(optionc);
 disp('(d)');disp(optiond);
-disp('answer = (b)'),disp(answer)
+disp('correct answer is: option b'),disp(answer)
+
+end
 
 function x = dotproduct(k1,k2)
 x = k1(1)*k2(1)+k1(2)*k2(2)+k1(3)*k2(3);
