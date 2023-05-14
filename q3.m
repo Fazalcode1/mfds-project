@@ -42,8 +42,11 @@ disp('(c)');disp(optionc);
 disp('(d)');disp(answer);
 
 %Printing the answer 
-printf('\ncorrect answer = option (d)\n'),disp(answer);
+fprintf('\ncorrect answer = option (d)\n'),disp(answer);
 end
 
 %Solution explanation
-fprintf('SOLUTION Q3: \nFor minimising the function f(x,y,z,w), we differentiate the langrangian function which is f(k)+a*h1(k)+b*h2(k)+c*h3(k) and make it equal to zero. That is, gradf+a*gradh1(k)+b*gradh2(k)+c*gradh3(k) = 0(grad=gradient).Therefore the gradient of the function f is a linear combination of constraints gradient. The option which is not a linear combination of the constraints gradient is the answer.\n');
+fprintf('\nSOLUTION Q3: \nFor minimising the function f(x,y,z,w), we differentiate the Langrangian function, which is\n');
+fprintf('f(k)+a*h1(k)+b*h2(k)+c*h3(k) and make it equal to zero. That is, gradf+a*gradh1(k)+b*gradh2(k)+c*gradh3(k) = 0 (grad =gradient).\n');
+fprintf('Therefore, the gradient of the function f is a linear combination of constraints. The option that is not a\n');
+fprintf('linear combination of the constraints gradient is the answer.\n');
