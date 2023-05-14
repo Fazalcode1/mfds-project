@@ -32,6 +32,11 @@ disp('correct answer is: option b'),disp(answer)
 
 end
 
+fprintf('\nSOLUTION Q1:\n We know that Av implies that the resulting vector is a linear combination of the columns of A. Therefore\n');
+fprintf('the projection of B on the subspace spanned by the column vectors of A will be the vector that is at the least distance from B.\n');
+fprintf('So, first we need to use the Gram-Schmidt orthogonalization and find an orthonormal basis for the subspace, and then we can project\n');
+fprintf('the vector B onto them, which will be our desired vector Av.\n');
+
 function x = dotproduct(k1,k2)
 x = k1(1)*k2(1)+k1(2)*k2(2)+k1(3)*k2(3);
 end
